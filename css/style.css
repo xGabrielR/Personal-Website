@@ -200,7 +200,7 @@ footer {
         max-width: 800px;
     }
     .htxt {
-        width: 600px;
+        width: 570px;
         left: 160px;
     }
     .ball {
@@ -213,12 +213,12 @@ footer {
         max-width: 800px;
     }
     .htxt {
-        width: 350px;
-        left: 230px;
+        width: 550px;
+        left: 30px;
     }
     .ball {
-        top: 1000px;
-        left: -520px;
+        top: 1200px;
+        left: -620px;
     }
     .acad {
         width: calc(40% - 20px);
@@ -236,11 +236,11 @@ footer {
         max-width: 800px;
     }
     .htxt {
-        width: 100%;
+        width: 120%;
         left: 0px;
     }
     .ball {
-        top: 1100px;
+        top: 1200px;
         left: -720px;
     }
     .acad {
@@ -251,12 +251,23 @@ footer {
     }
     .call i{
         font-size: 17px;
-        width: 130%;
+        width: 120%;
         text-align: left;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .historia {
+        position: relative;
+        width: 450px;
+        left: 2px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .htxt {
+        width: 200%;
+        left: 0px;
+    }
     .ball {
         top: 1250px;
         left: -720px;
@@ -264,6 +275,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .historia {
+        position: relative;
+        width: 450px;
+        left: -20px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .htxt {
+        width: 800px;
+    }
     .ball {
         top: 1300px;
         left: -720px;
