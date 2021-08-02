@@ -365,6 +365,7 @@ footer {
 
     .project {
         width: 100%;
+        background-color: blue;
     }
 
     .call i{
