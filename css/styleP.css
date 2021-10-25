@@ -169,6 +169,10 @@ h2::before  {
     bottom: 0;
 }
 
+.title {
+    color:rgb(255, 255, 255);
+}
+
 /* Projects */
 
 .projects {
@@ -365,7 +369,6 @@ footer {
 
     .project {
         width: 100%;
-        background-color: blue;
     }
 
     .call i{
