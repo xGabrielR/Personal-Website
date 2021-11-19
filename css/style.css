@@ -103,6 +103,7 @@ h2 {
     padding-top: -20px;
     margin: auto;
 }
+
 h2::before  {
     content: '';
     position: absolute;
@@ -111,6 +112,43 @@ h2::before  {
     background-color: rgb(224, 224, 224);
     bottom: 0;
 }
+
+.h3a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 254, 172);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 5, 5);
+    margin: 0px 0px 0px 20px;
+}
+
+a:hover{
+    color: rgb(255, 238, 0);
+    transition: 0.2s linear;
+}
+
+.title{
+    color:rgb(0, 0, 0);
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding-top: -20px;
+    margin: auto;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    margin: 0px 0px 10px 0px;
+}
+
 .historia {
     color: rgb(216, 183, 253);
     padding: 30px;
@@ -118,6 +156,7 @@ h2::before  {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .ball {
     position: absolute;
     height: 800px;
@@ -125,6 +164,15 @@ h2::before  {
     border-radius: 1000px;
     background-color: rgb(255, 255, 255);
     left: -400px;
+}
+
+.ball2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255);
+    left: -100px;
 }
 
 .htxt {
@@ -143,8 +191,91 @@ h2::before  {
     margin: 5px;
 }
 
+.whitebar {
+    background-color: white;
+    width: 40px;
+    height: 100px;
+}
+
+.formacad {
+    background-color: rgb(17, 25, 48);
+    padding: 40px 0px 70px 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 150px;
+}
+
+.acad {
+    margin: 10px 0px 20px 40px;
+    width: 400px;
+    background-color: rgb(20, 30, 57);
+    text-align: center;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.acad {
+    border: 1px solid rgb(255, 243, 79);
+    border-radius: 5px;
+    padding: 40px 20px;
+    transform: .5s linear;
+}
+
+.acad .icon {
+    color: rgb(255, 243, 79);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.acad h3 {
+    margin-bottom: 10px;
+}
+
+.acad:hover {
+    background-color: rgba(253, 253, 253, 0.151);
+}
+
 section {
     padding: 100px 0;
+}
+
+
+.projects {
+    background-color: rgb(9, 13, 26);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 200px -20px;
+    width: calc(90% + 6em);
+    padding: 10px;
+    color: white;
+}
+
+.projects article {
+    margin: 0 0 0 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 0 6em 6em;
+    position: relative;
+    width: calc(33.33333% - 6em);
+}
+
+.projects article .image {
+    display: block;
+    margin: 0 0 2em 0; 
+}
+
+.projects article img:hover{
+    transform: scale(1.01);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255);
+    transition: .2s linear;
+}
+
+.projects article .image img {
+      display: block;
+      width: 100%; 
 }
 
 footer {
@@ -186,13 +317,20 @@ footer {
     .iw {
         max-width: 800px;
     }
+    .acad {
+        width: calc(50% - 90px);
+    }
     .htxt {
         width: 750px;
         left: 130px;
     }
+    .form {
+        margin: 0px 0px 0px 50px;
+    }
     .ball {
         left: -470px;
     }
+    
 }
 
 @media screen and (max-width:1200px) {
@@ -234,6 +372,9 @@ footer {
 @media screen and (max-width: 800px) {
     .iw {
         max-width: 800px;
+    }
+    .acad {
+        width: 90%;
     }
     .htxt {
         width: 120%;
