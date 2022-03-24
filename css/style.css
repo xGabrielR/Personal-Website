@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #b950ff;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(245, 245, 245);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b950ff;
+    border-radius: 2px;
+}
+
+.navbar {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 100;
+    transition: .3s linear;
+}
+
+/* Stick */
+.stick {
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 18px;
+}
+
+.stick .navbar_menu a{
+    color: #000;
+} 
+
+.stick .navbar_menu a:hover {
+    color: rgba(0, 0, 0, 0.726);
+}
+/* End Stick */
+
+.set_width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.navbar .set_width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.menu_toggler {
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 100;
+    display: none;
+}
+
+.menu_toggler span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    position: relative;
+    transition: .3s linear;   
+}
+
+.navbar_menu {
+    display: flex;
+}
+
+.navbar_menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+
+.navbar_menu a:hover {
+    color: rgb(208, 208, 255);
+}
+
+#home {
+    min-height: 750px;
+    background: url('../img/wall.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home .set_width {
+    align-items: center;
+    justify-content: center;
+    top: 300px;
+    left: 300px;
+    text-align: center;
+}
+
+#home .content h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+#home .content h1::after {
+    content: 'Me Chamo Gabriel';
+    animation: text_animation 10s linear infinite;
+}
+
+@keyframes text_animation{
+    50% {
+        content: 'Sou Designer';
+    }
+    100% {
+        content: 'Sou Ciêntista de Dados';
+    }
+}
+
+.sm a {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 15px;
+    transition: .3s linear;
+}
+
+.sm a:hover {
+    color: rgb(166, 128, 255);
+}
+
+#home .download_b a{
+    color: rgb(214, 217, 255);
+    margin-left: 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid rgb(166, 128, 255);
+    padding: 10px;
+    transition: .3s linear;
+}
+
+#home .download_b a:hover {
+    color: rgb(216, 135, 253);
+    background-color: rgba(166, 128, 255, 0.048);
+}
+
+#about {
+    background-color: rgb(20, 30, 57);
+}
+
+.ftitle {
+    color:rgb(255, 255, 255);
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    top: -40px;
+    margin: auto;
+}
+
+.ftitle::before  {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(224, 224, 224);
+    bottom: 0;
+}
+
+.htxt {
+    background-color: rgba(255, 255, 255, 0.089);
+    position: relative;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.htxt h3{
+    color: #fff;
+}
+
+.htxt a {
+    color: rgb(123, 207, 255);
+    transition: .3s linear;
+}
+
+.htxt a:hover {
+    color: rgb(75, 229, 250);
+}
+
+.htxt p {
+    color: #fff;
+    padding:20px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 5px;
+}
+
+.whitebar {
+    background-color: white;
+    width: 40px;
+    height: 100px;
+}
+
+.formation {
+    background-color: rgb(17, 25, 48);
+    padding: 40px 0px 70px 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 150px;
+}
+
+.acad {
+    margin: 10px 0px 20px 40px;
+    width: 400px;
+    background-color: rgb(20, 30, 57);
+    text-align: center;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+.acad {
+    border: 1px solid rgb(255, 243, 79);
+    border-radius: 5px;
+    padding: 40px 20px;
+    transform: .5s linear;
+}
+
+.acad .icon {
+    color: rgb(255, 243, 79);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.acad h3 {
+    margin-bottom: 10px;
+}
+
+.acad:hover {
+    background-color: rgba(253, 253, 253, 0.151);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.ball {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255);
+    left: -100px;
+}
+
+.projects {
+    background-color: rgb(9, 13, 26);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 200px -20px;
+    width: calc(90% + 6em);
+    padding: 10px;
+    color: white;
+}
+
+.projects article {
+    margin: 0 0 0 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 0 6em 6em;
+    position: relative;
+    width: calc(33.33333% - 6em);
+}
+
+.projects article a {
+    color: rgb(123, 207, 255);
+    transition: .3s linear;
+}
+
+.projects article a:hover {
+    color: rgb(75, 229, 250);
+}
+
+.projects article .image {
+    display: block;
+    margin: 0 0 2em 0; 
+}
+
+.projects article img:hover{
+    transform: scale(1.01);
+    box-shadow: 3px 3px 3px rgb(255, 255, 255);
+    transition: .2s linear;
+}
+
+.projects article .image img {
+      display: block;
+      width: 100%; 
+}
+
+.title {
+    margin: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title::before{
+    content: '';
+    position: relative;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    margin-top: 10%;
+    padding: 100px;
+    background-image: url(../img/wall.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: #3d80fc;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #0d60fc;
+}
+
+@media screen and (max-width: 900px){
+    .menu_toggler {
+        display: block;
+    }
+
+    .form {
+        left: -150px;
+        width: 100%;
+        position: relative;
+    }
+
+    .acad {
+        width: 250px;
+        margin: 20px 20px;
+    }
+    
+    .navbar_menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 700px;
+        background-color: black;
+        padding: 80px 50px;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar_menu a {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .stick .navbar_menu {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .stick .menu_toggler span{
+       background-color: #000;
+    }
+
+    .navbar_menu.active {
+        right: 0%;
+    }
+
+    .menu_toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 7px;
+    }
+
+    .menu_toggler.active span:nth-child(2) {
+        transform: rotate(45deg);
+        bottom: 1px;
+    }
+
+    .menu_toggler.active span:nth-child(3) {
+        display: none;
+    }
+
+    .projects {
+        width: 99%;
+    }
+
+    .projects article {
+        left: -50px;
+        width: 75%;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer * {
+        position: relative;
+        left: -30px;
+    }
+}
